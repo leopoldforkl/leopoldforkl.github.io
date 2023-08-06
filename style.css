@@ -7,3 +7,25 @@
     background-color: blue; /* Or any other color you prefer */
 }
 
+#calculator {
+    text-align: center;
+    margin: 20px;
+}
+
+#calculator input {
+    width: 100px;
+    margin: 5px;
+}
+
+#calculator button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+

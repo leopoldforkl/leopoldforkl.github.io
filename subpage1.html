@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subpage1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to Subpage1</h1>
+    <div id="calculator">
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+        <div id="result"></div>
+    </div>
     <a href="index.html">Back to Main Page</a>
+    <script src="calculator.js"></script>
 </body>
 </html>
+
