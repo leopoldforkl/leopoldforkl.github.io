@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subpage 2</title>
+    <title>Lifetracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <button id="loginButton">Login</button>
+    </div>
+    <div id="personalSpace" style="display:none;">
+        <h2>Welcome, Leopold</h2>
+        <form id="thoughtForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required><br>
+            <label for="thought">Thought:</label>
+            <textarea id="thought" placeholder="Enter your thought here..." required></textarea><br>
+            <button type="submit">Save</button>
+        </form>
+        <table id="thoughtTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Thought</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <button id="logoutButton">Logout</button>
+    </div>
     <a href="index.html"><button id="backButton">Back to Main Page</button></a>
+
+    <script src="lifetracker_script.js"></script>
 </body>
 </html>
+
