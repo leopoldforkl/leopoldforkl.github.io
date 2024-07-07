@@ -1,4 +1,4 @@
-const API_URL = 'https://script.google.com/macros/s/AKfycbywRqiiMWfYURFuEI1j14-2hY9L-mwzuqceqMs84nOk/dev'; // Replace with your Google Web App URL
+const API_URL = 'https://script.google.com/macros/s/AKfycbyZX4VMQjRNaf1cuu4RgUvzcicZeFjQ-WxoWUiABIEO5uIdH8oIpVbLMuntTj2O0oCmdg/exec'; // Replace with your Google Web App URL
 
 document.getElementById('loginButton').addEventListener('click', function() {
     const username = document.getElementById('username').value;
