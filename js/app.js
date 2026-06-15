@@ -27,8 +27,14 @@ loader.load('assets/models/ur5/urdf/ur5.urdf', result => {
     robot = result;
     
     robot.rotation.x = -Math.PI / 2;
-    robot.position.set(0.5, -0.5, -1); 
-    robot.scale.set(1.5, 1.5, 1.5);
+
+    // ADJUST POSITION: (X, Y, Z)
+    // Increasing X  moves it further right.
+    // Decreasing Y  moves it down so it stays grounded on the screen.
+    robot.position.set(2.0, 0.5, -1); 
+    
+    // ADJUST SCALE: (X, Y, Z)
+    robot.scale.set(2.5, 2.5, 2.5);
     
     scene.add(robot);
 });
