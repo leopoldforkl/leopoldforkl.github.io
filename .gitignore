@@ -1,0 +1,11 @@
+# Tools
+map_repo.py
+repo_structure.txt
+
+#Files
+#*.dae
+
+# Jekyll build folders
+_site/
+.jekyll-cache/
+.jekyll-metadata
