@@ -59,10 +59,16 @@ nav {
 /* Main Content area */
 .content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 80vh;
     padding: 2rem;
+    min-height: 80vh;
+}
+
+.mobile-spacer {
+    height: 70vh;
+    width: 100%;
+    pointer-events: none;
 }
 
 /* Glassmorphism Panel */
@@ -102,4 +108,34 @@ h2 {
 p {
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column; /* Mobile first: stack vertically */
+    flex-grow: 1;
+}
+
+.canvas-container {
+    width: 100%;
+    min-height: 60vh; /* Ensures the robot has enough viewing space on mobile */
+    position: relative;
+}
+
+/* Desktop View (Landscape and at least 768px wide) */
+@media (orientation: landscape) and (min-width: 768px) {
+    .content {
+        align-items: flex-start; /* Push the glass panel to the left */
+        padding-left: 8vw; /* Give it some breathing room from the left edge */
+    }
+
+    .glass-panel {
+        max-width: 45vw; /* Constrain the text to the left side */
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .mobile-spacer {
+        display: none; /* Robot is continuously visible on the right, no spacer needed */
+    }
 }

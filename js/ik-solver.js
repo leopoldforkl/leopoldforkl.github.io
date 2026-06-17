@@ -2,7 +2,7 @@ class CCDIKSolver {
     constructor() {
         this.maxIterations = 5; 
         this.damping = 0.2;
-        this.eefName = 'tool0'; 
+        this.eefName = 'wrist_1_link'; 
         
         // Only run the positional solver on the macro joints
         this.positionalJoints = [
